@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+ 
+<script language="javascript">
+function test(){
+
+   if(document.form1.t1.value==""){
+	 window.demo.showName();
+   }else if(document.form1.t2.value==""){
+	 window.demo.showPass();
+	}else{
+var cc=document.form1.t1.value;
+		 window.demo.showJump(cc);
+
+	}
+	}
+</script>
+</head>
+
+<body>
+
+<form  action="" name="form1">
+ 
+姓名： <input type="text" name="t1"/> <br/>
+密码： <input type="password" name="t2"  /> <br/>
+ 
+<input type="button" onClick="test()" value="登录"/>
+</form>
+ 
+ 
+</form> 
+</body>
+</html>
